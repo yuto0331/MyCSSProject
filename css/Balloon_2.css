@@ -1,0 +1,154 @@
+body{padding: 0 10px 40px;}
+h2 {
+  font-size: 16px;
+}
+
+.ex1{
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+}
+.ex2{
+  width: 100px;
+  height: 100px;
+  background-color: #f72828;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #ea1a1a blue pink green;
+  margin: -8px;
+}
+.ex3{
+  width: 0;
+  height: 0;
+  background-color: #eee;
+  border-style: solid;
+  border-width: 20px;
+  border-color: red blue pink green;
+}
+.ex4{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px;
+  border-color: red transparent transparent transparent;
+}
+.ex5{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* border-width: 40px 20px 20px 20px; */
+  border-width: 40px 20px 20px 0px;
+  border-color: red transparent transparent transparent;
+  transform: skew(-15deg,0);
+}
+
+.balloon_1{
+  width: 200px;
+  height:100px;
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.balloon_1::before{     /*ç–‘ä¼¼è¦ç´ */
+  position: absolute;    /*ä¸Šè¦ç´ ã‚’relative,ä¸‹è¦ç´ ã‚’absoluteã«ã™ã‚‹*/
+  right: 20px;
+  bottom: -40px;      /*å¤–å´ã«ä»˜ã‘ãŸã„ã®ã§ãƒžã‚¤ãƒŠã‚¹ã«ã™ã‚‹*/
+  content: "";    /*ç–‘ä¼¼è¦ç´ ã«ã¯ç©ºæ–‡å­—ãŒå¿…è¦*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 20px;
+  border-color: #eee transparent transparent transparent;
+}
+.balloon_2{
+  width: 200px;
+  height:100px;
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.balloon_2::before{      /*ç–‘ä¼¼è¦ç´ */
+  position: absolute;    /*ä¸Šè¦ç´ ã‚’relative,ä¸‹è¦ç´ ã‚’absoluteã«ã™ã‚‹*/
+  right: 20px;
+  bottom: -25px;      /*å¤–å´ã«ä»˜ã‘ãŸã„ã®ã§ãƒžã‚¤ãƒŠã‚¹ã«ã™ã‚‹*/
+  content: "";    /*ç–‘ä¼¼è¦ç´ ã«ã¯ç©ºæ–‡å­—ãŒå¿…è¦*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 15px 20px 10px 0px;
+  /* border-color: #eee transparent transparent transparent; */
+  border-color: #eee transparent transparent transparent;
+}
+
+.balloon_3{
+  width: 200px;
+  height:100px;
+  /* background: #eee; */
+  border: 5px solid #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.balloon_3::before{     /*ç–‘ä¼¼è¦ç´ */
+  position: absolute;    /*ä¸Šè¦ç´ ã‚’relative,ä¸‹è¦ç´ ã‚’absoluteã«ã™ã‚‹*/
+  right: 20px;
+  bottom: -40px;      /*å¤–å´ã«ä»˜ã‘ãŸã„ã®ã§ãƒžã‚¤ãƒŠã‚¹ã«ã™ã‚‹*/
+  content: "";    /*ç–‘ä¼¼è¦ç´ ã«ã¯ç©ºæ–‡å­—ãŒå¿…è¦*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 20px;
+  border-color: #eee transparent transparent transparent;
+}
+.balloon_3::after{     /*beforeã®ä¸Šã«ç™½â–³ã‚’é‡ã­ã‚‹*/
+  position: absolute;    /*ä¸Šè¦ç´ ã‚’relative,ä¸‹è¦ç´ ã‚’absoluteã«ã™ã‚‹*/
+  right: 20px;
+  bottom: -32px;      /*å¤–å´ã«ä»˜ã‘ãŸã„ã®ã§ãƒžã‚¤ãƒŠã‚¹ã«ã™ã‚‹*/
+  content: "";    /*ç–‘ä¼¼è¦ç´ ã«ã¯ç©ºæ–‡å­—ãŒå¿…è¦*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 20px;
+  border-color: red transparent transparent transparent;
+}
+
+.balloon_4{
+  width: 200px;
+  height:100px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  position: relative;
+}
+
+.balloon_4::before{      /*ç–‘ä¼¼è¦ç´ */
+  position: absolute;    /*ä¸Šè¦ç´ ã‚’relative,ä¸‹è¦ç´ ã‚’absoluteã«ã™ã‚‹*/
+  right: 20px;
+  bottom: -25px;      /*å¤–å´ã«ä»˜ã‘ãŸã„ã®ã§ãƒžã‚¤ãƒŠã‚¹ã«ã™ã‚‹*/
+  content: "";    /*ç–‘ä¼¼è¦ç´ ã«ã¯ç©ºæ–‡å­—ãŒå¿…è¦*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 15px 20px 10px 0px;
+  /* border-color: #eee transparent transparent transparent; */
+  border-color: #eee transparent transparent transparent;
+}
+.balloon_4::after{      /*beforeã®ä¸Šã«ç™½*/
+  position: absolute;    /*ä¸Šè¦ç´ ã‚’relative,ä¸‹è¦ç´ ã‚’absoluteã«ã™ã‚‹*/
+  right: 15px;
+  bottom: -15px;      /*å¤–å´ã«ä»˜ã‘ãŸã„ã®ã§ãƒžã‚¤ãƒŠã‚¹ã«ã™ã‚‹*/
+  content: "";    /*ç–‘ä¼¼è¦ç´ ã«ã¯ç©ºæ–‡å­—ãŒå¿…è¦*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 15px 20px 10px 0px;
+  /* border-color: #eee transparent transparent transparent; */
+  border-color: red transparent transparent transparent;
+}

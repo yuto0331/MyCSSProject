@@ -1,0 +1,153 @@
+body{ padding: 0 10px 40px }
+h2 {
+  font-size: 16px;
+}
+
+.ex1{
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+}
+.ex2{
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border-style: solid;
+  border-width: 20px;
+  border-color: red blue pink green;
+}
+.ex3{
+  width: 0;
+  height: 0;
+  background-color: #eee;
+  border-style: solid;
+  border-width: 20px;
+  border-color: red blue pink green;
+}
+.ex4{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px;
+  border-color: red transparent transparent transparent;
+}
+.ex5{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* border-width: 40px 20px 20px 20px; */
+  border-width: 40px 20px 20px 0px;
+  border-color: red transparent transparent transparent;
+  transform: skew(-15deg,0);
+}
+
+.balloon_1{
+  width: 200px;
+  height:100px;
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.balloon_1::before{     /*疑似要素*/
+  position: absolute;    /*上要素をrelative,下要素をabsoluteにする*/
+  right: 20px;
+  bottom: -40px;      /*外側に付けたいのでマイナスにする*/
+  content: "";    /*疑似要素には空文字が必要*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 20px;
+  border-color: #eee transparent transparent transparent;
+}
+.balloon_2{
+  width: 200px;
+  height:100px;
+  background: #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.balloon_2::before{      /*疑似要素*/
+  position: absolute;    /*上要素をrelative,下要素をabsoluteにする*/
+  right: 20px;
+  bottom: -25px;      /*外側に付けたいのでマイナスにする*/
+  content: "";    /*疑似要素には空文字が必要*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 15px 20px 10px 0px;
+  /* border-color: #eee transparent transparent transparent; */
+  border-color: #eee transparent transparent transparent;
+}
+
+.balloon_3{
+  width: 200px;
+  height:100px;
+  /* background: #eee; */
+  border: 5px solid #eee;
+  border-radius: 3px;
+  position: relative;
+}
+
+.balloon_3::before{     /*疑似要素*/
+  position: absolute;    /*上要素をrelative,下要素をabsoluteにする*/
+  right: 20px;
+  bottom: -40px;      /*外側に付けたいのでマイナスにする*/
+  content: "";    /*疑似要素には空文字が必要*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 20px;
+  border-color: #eee transparent transparent transparent;
+}
+.balloon_3::after{     /*beforeの上に白△を重ねる*/
+  position: absolute;    /*上要素をrelative,下要素をabsoluteにする*/
+  right: 20px;
+  bottom: -32px;      /*外側に付けたいのでマイナスにする*/
+  content: "";    /*疑似要素には空文字が必要*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 20px;
+  border-color: red transparent transparent transparent;
+}
+
+.balloon_4{
+  width: 200px;
+  height:100px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  position: relative;
+}
+
+.balloon_4::before{      /*疑似要素*/
+  position: absolute;    /*上要素をrelative,下要素をabsoluteにする*/
+  right: 20px;
+  bottom: -25px;      /*外側に付けたいのでマイナスにする*/
+  content: "";    /*疑似要素には空文字が必要*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 15px 20px 10px 0px;
+  /* border-color: #eee transparent transparent transparent; */
+  border-color: #eee transparent transparent transparent;
+}
+.balloon_4::after{      /*beforeの上に白*/
+  position: absolute;    /*上要素をrelative,下要素をabsoluteにする*/
+  right: 15px;
+  bottom: -15px;      /*外側に付けたいのでマイナスにする*/
+  content: "";    /*疑似要素には空文字が必要*/
+  width: 0;
+  height: 0;
+  /* background-color: #eee; */
+  border-style: solid;
+  border-width: 15px 20px 10px 0px;
+  /* border-color: #eee transparent transparent transparent; */
+  border-color: red transparent transparent transparent;
+}
